@@ -36,9 +36,6 @@ class _MainApp extends StatelessWidget {
         // Recebe List<Photo>
         future: fetchPhotos(),
         builder: (context, snapshot) {
-          print('SNAPSHOT!!!');
-          print(snapshot);
-
           if (snapshot.hasError) print(snapshot.error);
 
           return snapshot.hasData
